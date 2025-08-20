@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Agent Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User-Agent Generator</h1>
+
+    <label for="device">Select Device:</label>
+    <select id="device">
+      <option value="iPhone">iPhone</option>
+      <option value="Android">Android</option>
+      <option value="Samsung">Samsung</option>
+    </select>
+
+    <label for="browser">Select Browser:</label>
+    <select id="browser">
+      <option value="Chrome">Chrome</option>
+      <option value="Safari">Safari</option>
+      <option value="Facebook">Facebook</option>
+      <option value="Instagram">Instagram</option>
+      <option value="LinkedIn">LinkedIn</option>
+    </select>
+
+    <label for="os">Select OS Version:</label>
+    <select id="os">
+      <option value="iOS 17.0">iOS 17.0</option>
+      <option value="Android 13">Android 13</option>
+      <option value="Android 12">Android 12</option>
+    </select>
+
+    <button id="generateBtn">Generate User-Agent</button>
+
+    <h3>Generated User-Agent:</h3>
+    <textarea id="userAgent" rows="6" cols="50" readonly></textarea>
+
+    <button id="checkBtn">Validate User-Agent</button>
+    <p id="validationResult"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
